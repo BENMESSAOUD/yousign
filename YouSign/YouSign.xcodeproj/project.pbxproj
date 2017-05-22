@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		353A46D61ED2D887009F2CD9 /* YouSign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353A46CC1ED2D887009F2CD9 /* YouSign.framework */; };
+		353A46DB1ED2D887009F2CD9 /* YouSignTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353A46DA1ED2D887009F2CD9 /* YouSignTests.swift */; };
+		353A46DD1ED2D887009F2CD9 /* YouSign.h in Headers */ = {isa = PBXBuildFile; fileRef = 353A46CF1ED2D887009F2CD9 /* YouSign.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B41936596F3C740F8BD62D39 /* Pods_YouSign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933F747A21DFA4BF22AC1D25 /* Pods_YouSign.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		353A46D71ED2D887009F2CD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 353A46C31ED2D887009F2CD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 353A46CB1ED2D887009F2CD9;
+			remoteInfo = YouSign;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		353A46CC1ED2D887009F2CD9 /* YouSign.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YouSign.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		353A46CF1ED2D887009F2CD9 /* YouSign.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YouSign.h; sourceTree = "<group>"; };
+		353A46D01ED2D887009F2CD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		353A46D51ED2D887009F2CD9 /* YouSignTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YouSignTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		353A46DA1ED2D887009F2CD9 /* YouSignTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouSignTests.swift; sourceTree = "<group>"; };
+		353A46DC1ED2D887009F2CD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5629343C2CEDBD04E182B5EF /* Pods-YouSign.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouSign.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YouSign/Pods-YouSign.debug.xcconfig"; sourceTree = "<group>"; };
+		933F747A21DFA4BF22AC1D25 /* Pods_YouSign.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YouSign.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D61DB7BAC5D95D891854E0FA /* Pods-YouSign.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouSign.release.xcconfig"; path = "Pods/Target Support Files/Pods-YouSign/Pods-YouSign.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		353A46C81ED2D887009F2CD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B41936596F3C740F8BD62D39 /* Pods_YouSign.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		353A46D21ED2D887009F2CD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				353A46D61ED2D887009F2CD9 /* YouSign.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		353A46C21ED2D887009F2CD9 = {
+			isa = PBXGroup;
+			children = (
+				353A46CE1ED2D887009F2CD9 /* YouSign */,
+				353A46D91ED2D887009F2CD9 /* YouSignTests */,
+				353A46CD1ED2D887009F2CD9 /* Products */,
+				56A8EAF3D593872E74C2E23E /* Pods */,
+				E1C96094D73C7F90B99DE342 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		353A46CD1ED2D887009F2CD9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				353A46CC1ED2D887009F2CD9 /* YouSign.framework */,
+				353A46D51ED2D887009F2CD9 /* YouSignTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		353A46CE1ED2D887009F2CD9 /* YouSign */ = {
+			isa = PBXGroup;
+			children = (
+				353A46CF1ED2D887009F2CD9 /* YouSign.h */,
+				353A46D01ED2D887009F2CD9 /* Info.plist */,
+			);
+			path = YouSign;
+			sourceTree = "<group>";
+		};
+		353A46D91ED2D887009F2CD9 /* YouSignTests */ = {
+			isa = PBXGroup;
+			children = (
+				353A46DA1ED2D887009F2CD9 /* YouSignTests.swift */,
+				353A46DC1ED2D887009F2CD9 /* Info.plist */,
+			);
+			path = YouSignTests;
+			sourceTree = "<group>";
+		};
+		56A8EAF3D593872E74C2E23E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5629343C2CEDBD04E182B5EF /* Pods-YouSign.debug.xcconfig */,
+				D61DB7BAC5D95D891854E0FA /* Pods-YouSign.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E1C96094D73C7F90B99DE342 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				933F747A21DFA4BF22AC1D25 /* Pods_YouSign.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		353A46C91ED2D887009F2CD9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				353A46DD1ED2D887009F2CD9 /* YouSign.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		353A46CB1ED2D887009F2CD9 /* YouSign */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 353A46E01ED2D887009F2CD9 /* Build configuration list for PBXNativeTarget "YouSign" */;
+			buildPhases = (
+				4876B1DDADB4D1E20F66B25A /* [CP] Check Pods Manifest.lock */,
+				353A46C71ED2D887009F2CD9 /* Sources */,
+				353A46C81ED2D887009F2CD9 /* Frameworks */,
+				353A46C91ED2D887009F2CD9 /* Headers */,
+				353A46CA1ED2D887009F2CD9 /* Resources */,
+				F56627E763F8B0FBC6C9012F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YouSign;
+			productName = YouSign;
+			productReference = 353A46CC1ED2D887009F2CD9 /* YouSign.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		353A46D41ED2D887009F2CD9 /* YouSignTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 353A46E31ED2D887009F2CD9 /* Build configuration list for PBXNativeTarget "YouSignTests" */;
+			buildPhases = (
+				353A46D11ED2D887009F2CD9 /* Sources */,
+				353A46D21ED2D887009F2CD9 /* Frameworks */,
+				353A46D31ED2D887009F2CD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				353A46D81ED2D887009F2CD9 /* PBXTargetDependency */,
+			);
+			name = YouSignTests;
+			productName = YouSignTests;
+			productReference = 353A46D51ED2D887009F2CD9 /* YouSignTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		353A46C31ED2D887009F2CD9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Mahmoud Ben Messaoud";
+				TargetAttributes = {
+					353A46CB1ED2D887009F2CD9 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					353A46D41ED2D887009F2CD9 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 353A46C61ED2D887009F2CD9 /* Build configuration list for PBXProject "YouSign" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 353A46C21ED2D887009F2CD9;
+			productRefGroup = 353A46CD1ED2D887009F2CD9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				353A46CB1ED2D887009F2CD9 /* YouSign */,
+				353A46D41ED2D887009F2CD9 /* YouSignTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		353A46CA1ED2D887009F2CD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		353A46D31ED2D887009F2CD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4876B1DDADB4D1E20F66B25A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F56627E763F8B0FBC6C9012F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YouSign/Pods-YouSign-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		353A46C71ED2D887009F2CD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		353A46D11ED2D887009F2CD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				353A46DB1ED2D887009F2CD9 /* YouSignTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		353A46D81ED2D887009F2CD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 353A46CB1ED2D887009F2CD9 /* YouSign */;
+			targetProxy = 353A46D71ED2D887009F2CD9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		353A46DE1ED2D887009F2CD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		353A46DF1ED2D887009F2CD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		353A46E11ED2D887009F2CD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5629343C2CEDBD04E182B5EF /* Pods-YouSign.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = YouSign/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pixittechnology.YouSign;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		353A46E21ED2D887009F2CD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D61DB7BAC5D95D891854E0FA /* Pods-YouSign.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = YouSign/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pixittechnology.YouSign;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		353A46E41ED2D887009F2CD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YouSignTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pixittechnology.YouSignTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		353A46E51ED2D887009F2CD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YouSignTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pixittechnology.YouSignTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		353A46C61ED2D887009F2CD9 /* Build configuration list for PBXProject "YouSign" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				353A46DE1ED2D887009F2CD9 /* Debug */,
+				353A46DF1ED2D887009F2CD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		353A46E01ED2D887009F2CD9 /* Build configuration list for PBXNativeTarget "YouSign" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				353A46E11ED2D887009F2CD9 /* Debug */,
+				353A46E21ED2D887009F2CD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		353A46E31ED2D887009F2CD9 /* Build configuration list for PBXNativeTarget "YouSignTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				353A46E41ED2D887009F2CD9 /* Debug */,
+				353A46E51ED2D887009F2CD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 353A46C31ED2D887009F2CD9 /* Project object */;
+}
