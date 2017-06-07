@@ -1,15 +1,15 @@
 PODS:
-  - Alamofire (4.4.0)
-  - SWXMLHash (3.1.0)
+  - CryptoSwift (0.6.9)
+  - SwiftyXMLParser (3.0.0)
 
 DEPENDENCIES:
-  - Alamofire
-  - SWXMLHash
+  - CryptoSwift
+  - SwiftyXMLParser
 
 SPEC CHECKSUMS:
-  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
-  SWXMLHash: d2a672ac416d71099aea91d2b4b9fa871eb09f94
+  CryptoSwift: a22f6ba238e9ce4d26ee7bf45b9ed82e7122d4a0
+  SwiftyXMLParser: 8d2295fb4fbc6e2ff241e7c8d7717e159be35969
 
-PODFILE CHECKSUM: 19d7cd29ae269c53e635be0e2284f757a12e3574
+PODFILE CHECKSUM: 8f9c912bccf555ac693fece41d5d731cc60dd120
 
 COCOAPODS: 1.2.1

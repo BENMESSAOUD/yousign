@@ -15,5 +15,3 @@ FOUNDATION_EXPORT double YouSignVersionNumber;
 FOUNDATION_EXPORT const unsigned char YouSignVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <YouSign/PublicHeader.h>
-
-

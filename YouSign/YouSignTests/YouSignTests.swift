@@ -7,7 +7,6 @@
 //
 
 import XCTest
-@testable import YouSign
 
 class YouSignTests: XCTestCase {
     

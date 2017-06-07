@@ -9,6 +9,16 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>YouSignTestTarget.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>YouSignTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -18,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>353A46D41ED2D887009F2CD9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>359B1AE31ED3463D00530F2E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

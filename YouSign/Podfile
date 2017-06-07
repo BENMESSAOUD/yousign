@@ -2,9 +2,17 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '9.0'
 use_frameworks!
 
+def standard_pods
+    pod 'SwiftyXMLParser'
+    pod 'CryptoSwift'
+end
+
 target 'YouSign' do
-	pod 'SWXMLHash'
-	pod 'Alamofire'
+	standard_pods
+end
+
+target 'YouSignTestTarget' do
+	standard_pods
 end
 
 post_install do |installer|

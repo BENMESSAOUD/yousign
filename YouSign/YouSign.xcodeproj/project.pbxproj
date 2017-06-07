@@ -7,9 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3503A18D1EDC3CEC009E26E0 /* Connect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3503A18C1EDC3CEC009E26E0 /* Connect.swift */; };
+		3503A18F1EDC3DC7009E26E0 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3503A18E1EDC3DC7009E26E0 /* Action.swift */; };
+		3503A1921EDC3F94009E26E0 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3503A1911EDC3F94009E26E0 /* String+Extension.swift */; };
 		353A46D61ED2D887009F2CD9 /* YouSign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353A46CC1ED2D887009F2CD9 /* YouSign.framework */; };
 		353A46DB1ED2D887009F2CD9 /* YouSignTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353A46DA1ED2D887009F2CD9 /* YouSignTests.swift */; };
 		353A46DD1ED2D887009F2CD9 /* YouSign.h in Headers */ = {isa = PBXBuildFile; fileRef = 353A46CF1ED2D887009F2CD9 /* YouSign.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		356C31E31EE69FF8002D3959 /* SignedFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356C31E21EE69FF8002D3959 /* SignedFiles.swift */; };
+		357B1CF61EE591FA003C43D4 /* SignatureConfirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357B1CF51EE591FA003C43D4 /* SignatureConfirmation.swift */; };
+		357B527F1EE4CEA100B211A3 /* SignatureRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357B527E1EE4CEA100B211A3 /* SignatureRequest.swift */; };
+		357B52811EE4DF6500B211A3 /* Signature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357B52801EE4DF6500B211A3 /* Signature.swift */; };
+		357C53D61EDEE9CA000C10CA /* Body.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357C53D11EDEE9CA000C10CA /* Body.swift */; };
+		357C53D71EDEE9CA000C10CA /* Envelope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357C53D21EDEE9CA000C10CA /* Envelope.swift */; };
+		357C53D81EDEE9CA000C10CA /* Headers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357C53D31EDEE9CA000C10CA /* Headers.swift */; };
+		357C53D91EDEE9CA000C10CA /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357C53D41EDEE9CA000C10CA /* Node.swift */; };
+		357C53DA1EDEE9CA000C10CA /* SoapRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357C53D51EDEE9CA000C10CA /* SoapRequest.swift */; };
+		357C53DE1EDEEC6D000C10CA /* Node+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357C53DD1EDEEC6D000C10CA /* Node+Extension.swift */; };
+		357C53E11EDEF61B000C10CA /* SoapRequest.swift in Headers */ = {isa = PBXBuildFile; fileRef = 357C53D51EDEE9CA000C10CA /* SoapRequest.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		357C53E21EDEF631000C10CA /* Body.swift in Headers */ = {isa = PBXBuildFile; fileRef = 357C53D11EDEE9CA000C10CA /* Body.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		357C53E31EDEF631000C10CA /* Envelope.swift in Headers */ = {isa = PBXBuildFile; fileRef = 357C53D21EDEE9CA000C10CA /* Envelope.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		357C53E41EDEF631000C10CA /* Headers.swift in Headers */ = {isa = PBXBuildFile; fileRef = 357C53D31EDEE9CA000C10CA /* Headers.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		357C53E51EDEF631000C10CA /* String+Extension.swift in Headers */ = {isa = PBXBuildFile; fileRef = 3503A1911EDC3F94009E26E0 /* String+Extension.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		357C53E61EDEF631000C10CA /* Node+Extension.swift in Headers */ = {isa = PBXBuildFile; fileRef = 357C53DD1EDEEC6D000C10CA /* Node+Extension.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		357C53E71EDEF631000C10CA /* Connect.swift in Headers */ = {isa = PBXBuildFile; fileRef = 3503A18C1EDC3CEC009E26E0 /* Connect.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		357C53E81EDEF631000C10CA /* Action.swift in Headers */ = {isa = PBXBuildFile; fileRef = 3503A18E1EDC3DC7009E26E0 /* Action.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		359B1ADB1ED33C2D00530F2E /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359B1ADA1ED33C2D00530F2E /* Credentials.swift */; };
+		359B1ADD1ED33EC700530F2E /* Environement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359B1ADC1ED33EC700530F2E /* Environement.swift */; };
+		359B1ADF1ED3435600530F2E /* EnvironementTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359B1ADE1ED3435600530F2E /* EnvironementTest.swift */; };
+		359B1AE71ED3463D00530F2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359B1AE61ED3463D00530F2E /* AppDelegate.swift */; };
+		359B1AE91ED3463D00530F2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359B1AE81ED3463D00530F2E /* ViewController.swift */; };
+		359B1AEC1ED3463D00530F2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 359B1AEA1ED3463D00530F2E /* Main.storyboard */; };
+		359B1AEE1ED3463D00530F2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 359B1AED1ED3463D00530F2E /* Assets.xcassets */; };
+		359B1AF11ED3463D00530F2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 359B1AEF1ED3463D00530F2E /* LaunchScreen.storyboard */; };
+		359B1AF81ED346AE00530F2E /* YouSign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353A46CC1ED2D887009F2CD9 /* YouSign.framework */; };
+		359B1AF91ED346AE00530F2E /* YouSign.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 353A46CC1ED2D887009F2CD9 /* YouSign.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		359B1AFB1ED3470000530F2E /* Credentials.swift in Headers */ = {isa = PBXBuildFile; fileRef = 359B1ADA1ED33C2D00530F2E /* Credentials.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		359B1AFC1ED3470000530F2E /* Environement.swift in Headers */ = {isa = PBXBuildFile; fileRef = 359B1ADC1ED33EC700530F2E /* Environement.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		359E239A1EDC4CD00097B7F4 /* ActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359E23991EDC4CD00097B7F4 /* ActionTests.swift */; };
+		35A9F0A41EE39D2F00421A07 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A9F0A31EE39D2F00421A07 /* File.swift */; };
+		35A9F0A61EE39D4A00421A07 /* Signer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A9F0A51EE39D4A00421A07 /* Signer.swift */; };
+		35F3A0FC1EDEFA9200D6F619 /* Authent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F3A0FB1EDEFA9200D6F619 /* Authent.swift */; };
+		35F3A0FF1EE0039200D6F619 /* Connector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F3A0FE1EE0039200D6F619 /* Connector.swift */; };
+		35F3A1021EE01E9800D6F619 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F3A1011EE01E9800D6F619 /* Constants.swift */; };
+		35F3A1041EE01F6200D6F619 /* YSKeysDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F3A1031EE01F6200D6F619 /* YSKeysDescription.swift */; };
+		A8503BA573A1F8108A1A560D /* Pods_YouSignTestTarget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B507D6A1E2BE7915207C1F7 /* Pods_YouSignTestTarget.framework */; };
 		B41936596F3C740F8BD62D39 /* Pods_YouSign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933F747A21DFA4BF22AC1D25 /* Pods_YouSign.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,18 +62,79 @@
 			remoteGlobalIDString = 353A46CB1ED2D887009F2CD9;
 			remoteInfo = YouSign;
 		};
+		359B1AFD1ED383BE00530F2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 353A46C31ED2D887009F2CD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 353A46CB1ED2D887009F2CD9;
+			remoteInfo = YouSign;
+		};
+		359B1AFF1ED384D600530F2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 353A46C31ED2D887009F2CD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 359B1AE31ED3463D00530F2E;
+			remoteInfo = YouSignTestTarget;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		359B1AFA1ED346AE00530F2E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				359B1AF91ED346AE00530F2E /* YouSign.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3503A18C1EDC3CEC009E26E0 /* Connect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connect.swift; sourceTree = "<group>"; };
+		3503A18E1EDC3DC7009E26E0 /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		3503A1911EDC3F94009E26E0 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		353A46CC1ED2D887009F2CD9 /* YouSign.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YouSign.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		353A46CF1ED2D887009F2CD9 /* YouSign.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YouSign.h; sourceTree = "<group>"; };
 		353A46D01ED2D887009F2CD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		353A46D51ED2D887009F2CD9 /* YouSignTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YouSignTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		353A46DA1ED2D887009F2CD9 /* YouSignTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouSignTests.swift; sourceTree = "<group>"; };
 		353A46DC1ED2D887009F2CD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5629343C2CEDBD04E182B5EF /* Pods-YouSign.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouSign.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YouSign/Pods-YouSign.debug.xcconfig"; sourceTree = "<group>"; };
+		356C31E21EE69FF8002D3959 /* SignedFiles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignedFiles.swift; sourceTree = "<group>"; };
+		357B1CF51EE591FA003C43D4 /* SignatureConfirmation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignatureConfirmation.swift; sourceTree = "<group>"; };
+		357B527E1EE4CEA100B211A3 /* SignatureRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignatureRequest.swift; sourceTree = "<group>"; };
+		357B52801EE4DF6500B211A3 /* Signature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signature.swift; sourceTree = "<group>"; };
+		357C53D11EDEE9CA000C10CA /* Body.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Body.swift; sourceTree = "<group>"; };
+		357C53D21EDEE9CA000C10CA /* Envelope.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Envelope.swift; sourceTree = "<group>"; };
+		357C53D31EDEE9CA000C10CA /* Headers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Headers.swift; sourceTree = "<group>"; };
+		357C53D41EDEE9CA000C10CA /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		357C53D51EDEE9CA000C10CA /* SoapRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoapRequest.swift; sourceTree = "<group>"; };
+		357C53DD1EDEEC6D000C10CA /* Node+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Node+Extension.swift"; sourceTree = "<group>"; };
+		359B1ADA1ED33C2D00530F2E /* Credentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		359B1ADC1ED33EC700530F2E /* Environement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environement.swift; sourceTree = "<group>"; };
+		359B1ADE1ED3435600530F2E /* EnvironementTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironementTest.swift; sourceTree = "<group>"; };
+		359B1AE41ED3463D00530F2E /* YouSignTestTarget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouSignTestTarget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		359B1AE61ED3463D00530F2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		359B1AE81ED3463D00530F2E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		359B1AEB1ED3463D00530F2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		359B1AED1ED3463D00530F2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		359B1AF01ED3463D00530F2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		359B1AF21ED3463D00530F2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		359E23991EDC4CD00097B7F4 /* ActionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionTests.swift; sourceTree = "<group>"; };
+		35A9F0A31EE39D2F00421A07 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		35A9F0A51EE39D4A00421A07 /* Signer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signer.swift; sourceTree = "<group>"; };
+		35F3A0FB1EDEFA9200D6F619 /* Authent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authent.swift; sourceTree = "<group>"; };
+		35F3A0FE1EE0039200D6F619 /* Connector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connector.swift; sourceTree = "<group>"; };
+		35F3A1011EE01E9800D6F619 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		35F3A1031EE01F6200D6F619 /* YSKeysDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSKeysDescription.swift; sourceTree = "<group>"; };
+		4DF4B95E3DB49A19C4EE38A0 /* Pods-YouSign.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouSign.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YouSign/Pods-YouSign.debug.xcconfig"; sourceTree = "<group>"; };
+		51DC8A2CFB8469D7E6D8F047 /* Pods-YouSign.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouSign.release.xcconfig"; path = "Pods/Target Support Files/Pods-YouSign/Pods-YouSign.release.xcconfig"; sourceTree = "<group>"; };
+		5B507D6A1E2BE7915207C1F7 /* Pods_YouSignTestTarget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YouSignTestTarget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6672F07C1E5A3923039C2217 /* Pods-YouSignTestTarget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouSignTestTarget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YouSignTestTarget/Pods-YouSignTestTarget.debug.xcconfig"; sourceTree = "<group>"; };
 		933F747A21DFA4BF22AC1D25 /* Pods_YouSign.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YouSign.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D61DB7BAC5D95D891854E0FA /* Pods-YouSign.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouSign.release.xcconfig"; path = "Pods/Target Support Files/Pods-YouSign/Pods-YouSign.release.xcconfig"; sourceTree = "<group>"; };
+		B462FF09348D0149048F447A /* Pods-YouSignTestTarget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouSignTestTarget.release.xcconfig"; path = "Pods/Target Support Files/Pods-YouSignTestTarget/Pods-YouSignTestTarget.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,14 +154,45 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		359B1AE11ED3463D00530F2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				359B1AF81ED346AE00530F2E /* YouSign.framework in Frameworks */,
+				A8503BA573A1F8108A1A560D /* Pods_YouSignTestTarget.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3503A18B1EDC3C4B009E26E0 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				3503A18C1EDC3CEC009E26E0 /* Connect.swift */,
+				357B1CF51EE591FA003C43D4 /* SignatureConfirmation.swift */,
+				3503A18E1EDC3DC7009E26E0 /* Action.swift */,
+				357B527E1EE4CEA100B211A3 /* SignatureRequest.swift */,
+				356C31E21EE69FF8002D3959 /* SignedFiles.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		3503A1901EDC3F75009E26E0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3503A1911EDC3F94009E26E0 /* String+Extension.swift */,
+				357C53DD1EDEEC6D000C10CA /* Node+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		353A46C21ED2D887009F2CD9 = {
 			isa = PBXGroup;
 			children = (
 				353A46CE1ED2D887009F2CD9 /* YouSign */,
 				353A46D91ED2D887009F2CD9 /* YouSignTests */,
+				359B1AE51ED3463D00530F2E /* YouSignTestTarget */,
 				353A46CD1ED2D887009F2CD9 /* Products */,
 				56A8EAF3D593872E74C2E23E /* Pods */,
 				E1C96094D73C7F90B99DE342 /* Frameworks */,
@@ -71,6 +204,7 @@
 			children = (
 				353A46CC1ED2D887009F2CD9 /* YouSign.framework */,
 				353A46D51ED2D887009F2CD9 /* YouSignTests.xctest */,
+				359B1AE41ED3463D00530F2E /* YouSignTestTarget.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,6 +212,13 @@
 		353A46CE1ED2D887009F2CD9 /* YouSign */ = {
 			isa = PBXGroup;
 			children = (
+				35A9F0A21EE39D1100421A07 /* BussinesObjects */,
+				35F3A1001EE01E8900D6F619 /* Utils */,
+				35F3A0FD1EE0032600D6F619 /* Networking */,
+				357C53D01EDEE98E000C10CA /* Soap */,
+				3503A1901EDC3F75009E26E0 /* Extensions */,
+				3503A18B1EDC3C4B009E26E0 /* Actions */,
+				359B1AD91ED33C1400530F2E /* Env */,
 				353A46CF1ED2D887009F2CD9 /* YouSign.h */,
 				353A46D01ED2D887009F2CD9 /* Info.plist */,
 			);
@@ -89,15 +230,81 @@
 			children = (
 				353A46DA1ED2D887009F2CD9 /* YouSignTests.swift */,
 				353A46DC1ED2D887009F2CD9 /* Info.plist */,
+				359B1ADE1ED3435600530F2E /* EnvironementTest.swift */,
+				359E23991EDC4CD00097B7F4 /* ActionTests.swift */,
 			);
 			path = YouSignTests;
+			sourceTree = "<group>";
+		};
+		357C53D01EDEE98E000C10CA /* Soap */ = {
+			isa = PBXGroup;
+			children = (
+				357C53D11EDEE9CA000C10CA /* Body.swift */,
+				357C53D21EDEE9CA000C10CA /* Envelope.swift */,
+				357C53D31EDEE9CA000C10CA /* Headers.swift */,
+				357C53D41EDEE9CA000C10CA /* Node.swift */,
+				357C53D51EDEE9CA000C10CA /* SoapRequest.swift */,
+			);
+			path = Soap;
+			sourceTree = "<group>";
+		};
+		359B1AD91ED33C1400530F2E /* Env */ = {
+			isa = PBXGroup;
+			children = (
+				359B1ADA1ED33C2D00530F2E /* Credentials.swift */,
+				359B1ADC1ED33EC700530F2E /* Environement.swift */,
+			);
+			path = Env;
+			sourceTree = "<group>";
+		};
+		359B1AE51ED3463D00530F2E /* YouSignTestTarget */ = {
+			isa = PBXGroup;
+			children = (
+				359B1AE61ED3463D00530F2E /* AppDelegate.swift */,
+				359B1AE81ED3463D00530F2E /* ViewController.swift */,
+				359B1AEA1ED3463D00530F2E /* Main.storyboard */,
+				359B1AED1ED3463D00530F2E /* Assets.xcassets */,
+				359B1AEF1ED3463D00530F2E /* LaunchScreen.storyboard */,
+				359B1AF21ED3463D00530F2E /* Info.plist */,
+				35F3A0FB1EDEFA9200D6F619 /* Authent.swift */,
+			);
+			path = YouSignTestTarget;
+			sourceTree = "<group>";
+		};
+		35A9F0A21EE39D1100421A07 /* BussinesObjects */ = {
+			isa = PBXGroup;
+			children = (
+				35A9F0A31EE39D2F00421A07 /* File.swift */,
+				35A9F0A51EE39D4A00421A07 /* Signer.swift */,
+				357B52801EE4DF6500B211A3 /* Signature.swift */,
+			);
+			path = BussinesObjects;
+			sourceTree = "<group>";
+		};
+		35F3A0FD1EE0032600D6F619 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				35F3A0FE1EE0039200D6F619 /* Connector.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		35F3A1001EE01E8900D6F619 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				35F3A1011EE01E9800D6F619 /* Constants.swift */,
+				35F3A1031EE01F6200D6F619 /* YSKeysDescription.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		56A8EAF3D593872E74C2E23E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5629343C2CEDBD04E182B5EF /* Pods-YouSign.debug.xcconfig */,
-				D61DB7BAC5D95D891854E0FA /* Pods-YouSign.release.xcconfig */,
+				4DF4B95E3DB49A19C4EE38A0 /* Pods-YouSign.debug.xcconfig */,
+				51DC8A2CFB8469D7E6D8F047 /* Pods-YouSign.release.xcconfig */,
+				6672F07C1E5A3923039C2217 /* Pods-YouSignTestTarget.debug.xcconfig */,
+				B462FF09348D0149048F447A /* Pods-YouSignTestTarget.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -106,6 +313,7 @@
 			isa = PBXGroup;
 			children = (
 				933F747A21DFA4BF22AC1D25 /* Pods_YouSign.framework */,
+				5B507D6A1E2BE7915207C1F7 /* Pods_YouSignTestTarget.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -118,6 +326,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				353A46DD1ED2D887009F2CD9 /* YouSign.h in Headers */,
+				357C53E11EDEF61B000C10CA /* SoapRequest.swift in Headers */,
+				359B1AFB1ED3470000530F2E /* Credentials.swift in Headers */,
+				357C53E71EDEF631000C10CA /* Connect.swift in Headers */,
+				357C53E81EDEF631000C10CA /* Action.swift in Headers */,
+				359B1AFC1ED3470000530F2E /* Environement.swift in Headers */,
+				357C53E21EDEF631000C10CA /* Body.swift in Headers */,
+				357C53E31EDEF631000C10CA /* Envelope.swift in Headers */,
+				357C53E41EDEF631000C10CA /* Headers.swift in Headers */,
+				357C53E51EDEF631000C10CA /* String+Extension.swift in Headers */,
+				357C53E61EDEF631000C10CA /* Node+Extension.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,11 +374,34 @@
 			);
 			dependencies = (
 				353A46D81ED2D887009F2CD9 /* PBXTargetDependency */,
+				359B1B001ED384D600530F2E /* PBXTargetDependency */,
 			);
 			name = YouSignTests;
 			productName = YouSignTests;
 			productReference = 353A46D51ED2D887009F2CD9 /* YouSignTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		359B1AE31ED3463D00530F2E /* YouSignTestTarget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 359B1AF31ED3463D00530F2E /* Build configuration list for PBXNativeTarget "YouSignTestTarget" */;
+			buildPhases = (
+				3FA120E7C02AEF866ED6210B /* [CP] Check Pods Manifest.lock */,
+				359B1AE01ED3463D00530F2E /* Sources */,
+				359B1AE11ED3463D00530F2E /* Frameworks */,
+				359B1AE21ED3463D00530F2E /* Resources */,
+				359B1AFA1ED346AE00530F2E /* Embed Frameworks */,
+				4D02CF66A424ADFA93F36D1B /* [CP] Embed Pods Frameworks */,
+				D4B5D2B042030A36BA3A987E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				359B1AFE1ED383BE00530F2E /* PBXTargetDependency */,
+			);
+			name = YouSignTestTarget;
+			productName = YouSignTestTarget;
+			productReference = 359B1AE41ED3463D00530F2E /* YouSignTestTarget.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -174,9 +415,15 @@
 				TargetAttributes = {
 					353A46CB1ED2D887009F2CD9 = {
 						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					353A46D41ED2D887009F2CD9 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 359B1AE31ED3463D00530F2E;
+					};
+					359B1AE31ED3463D00530F2E = {
 						CreatedOnToolsVersion = 8.3.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -188,6 +435,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 353A46C21ED2D887009F2CD9;
 			productRefGroup = 353A46CD1ED2D887009F2CD9 /* Products */;
@@ -196,6 +444,7 @@
 			targets = (
 				353A46CB1ED2D887009F2CD9 /* YouSign */,
 				353A46D41ED2D887009F2CD9 /* YouSignTests */,
+				359B1AE31ED3463D00530F2E /* YouSignTestTarget */,
 			);
 		};
 /* End PBXProject section */
@@ -215,9 +464,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		359B1AE21ED3463D00530F2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				359B1AF11ED3463D00530F2E /* LaunchScreen.storyboard in Resources */,
+				359B1AEE1ED3463D00530F2E /* Assets.xcassets in Resources */,
+				359B1AEC1ED3463D00530F2E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3FA120E7C02AEF866ED6210B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		4876B1DDADB4D1E20F66B25A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -231,6 +505,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4D02CF66A424ADFA93F36D1B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YouSignTestTarget/Pods-YouSignTestTarget-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4B5D2B042030A36BA3A987E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YouSignTestTarget/Pods-YouSignTestTarget-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F56627E763F8B0FBC6C9012F /* [CP] Copy Pods Resources */ = {
@@ -255,6 +559,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				357C53D61EDEE9CA000C10CA /* Body.swift in Sources */,
+				359B1ADB1ED33C2D00530F2E /* Credentials.swift in Sources */,
+				357C53D81EDEE9CA000C10CA /* Headers.swift in Sources */,
+				3503A18F1EDC3DC7009E26E0 /* Action.swift in Sources */,
+				359B1ADD1ED33EC700530F2E /* Environement.swift in Sources */,
+				357B527F1EE4CEA100B211A3 /* SignatureRequest.swift in Sources */,
+				357C53D71EDEE9CA000C10CA /* Envelope.swift in Sources */,
+				357B1CF61EE591FA003C43D4 /* SignatureConfirmation.swift in Sources */,
+				35F3A0FF1EE0039200D6F619 /* Connector.swift in Sources */,
+				35F3A1021EE01E9800D6F619 /* Constants.swift in Sources */,
+				3503A1921EDC3F94009E26E0 /* String+Extension.swift in Sources */,
+				35F3A1041EE01F6200D6F619 /* YSKeysDescription.swift in Sources */,
+				35A9F0A41EE39D2F00421A07 /* File.swift in Sources */,
+				356C31E31EE69FF8002D3959 /* SignedFiles.swift in Sources */,
+				357B52811EE4DF6500B211A3 /* Signature.swift in Sources */,
+				3503A18D1EDC3CEC009E26E0 /* Connect.swift in Sources */,
+				357C53DE1EDEEC6D000C10CA /* Node+Extension.swift in Sources */,
+				357C53DA1EDEE9CA000C10CA /* SoapRequest.swift in Sources */,
+				357C53D91EDEE9CA000C10CA /* Node.swift in Sources */,
+				35A9F0A61EE39D4A00421A07 /* Signer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +586,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				359E239A1EDC4CD00097B7F4 /* ActionTests.swift in Sources */,
 				353A46DB1ED2D887009F2CD9 /* YouSignTests.swift in Sources */,
+				359B1ADF1ED3435600530F2E /* EnvironementTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		359B1AE01ED3463D00530F2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				359B1AE91ED3463D00530F2E /* ViewController.swift in Sources */,
+				359B1AE71ED3463D00530F2E /* AppDelegate.swift in Sources */,
+				35F3A0FC1EDEFA9200D6F619 /* Authent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +610,36 @@
 			target = 353A46CB1ED2D887009F2CD9 /* YouSign */;
 			targetProxy = 353A46D71ED2D887009F2CD9 /* PBXContainerItemProxy */;
 		};
+		359B1AFE1ED383BE00530F2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 353A46CB1ED2D887009F2CD9 /* YouSign */;
+			targetProxy = 359B1AFD1ED383BE00530F2E /* PBXContainerItemProxy */;
+		};
+		359B1B001ED384D600530F2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 359B1AE31ED3463D00530F2E /* YouSignTestTarget */;
+			targetProxy = 359B1AFF1ED384D600530F2E /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		359B1AEA1ED3463D00530F2E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				359B1AEB1ED3463D00530F2E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		359B1AEF1ED3463D00530F2E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				359B1AF01ED3463D00530F2E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		353A46DE1ED2D887009F2CD9 /* Debug */ = {
@@ -380,8 +745,9 @@
 		};
 		353A46E11ED2D887009F2CD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5629343C2CEDBD04E182B5EF /* Pods-YouSign.debug.xcconfig */;
+			baseConfigurationReference = 4DF4B95E3DB49A19C4EE38A0 /* Pods-YouSign.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -393,14 +759,17 @@
 				PRODUCT_BUNDLE_IDENTIFIER = pixittechnology.YouSign;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		353A46E21ED2D887009F2CD9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D61DB7BAC5D95D891854E0FA /* Pods-YouSign.release.xcconfig */;
+			baseConfigurationReference = 51DC8A2CFB8469D7E6D8F047 /* Pods-YouSign.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -412,6 +781,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = pixittechnology.YouSign;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -419,20 +789,52 @@
 		353A46E41ED2D887009F2CD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				INFOPLIST_FILE = YouSignTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pixittechnology.YouSignTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YouSignTestTarget.app/YouSignTestTarget";
 			};
 			name = Debug;
 		};
 		353A46E51ED2D887009F2CD9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				INFOPLIST_FILE = YouSignTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pixittechnology.YouSignTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YouSignTestTarget.app/YouSignTestTarget";
+			};
+			name = Release;
+		};
+		359B1AF41ED3463D00530F2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6672F07C1E5A3923039C2217 /* Pods-YouSignTestTarget.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YouSignTestTarget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pixittechnology.YouSignTestTarget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		359B1AF51ED3463D00530F2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B462FF09348D0149048F447A /* Pods-YouSignTestTarget.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YouSignTestTarget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pixittechnology.YouSignTestTarget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -457,6 +859,7 @@
 				353A46E21ED2D887009F2CD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		353A46E31ED2D887009F2CD9 /* Build configuration list for PBXNativeTarget "YouSignTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +868,16 @@
 				353A46E51ED2D887009F2CD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		359B1AF31ED3463D00530F2E /* Build configuration list for PBXNativeTarget "YouSignTestTarget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				359B1AF41ED3463D00530F2E /* Debug */,
+				359B1AF51ED3463D00530F2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
