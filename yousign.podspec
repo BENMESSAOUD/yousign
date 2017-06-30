@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
     s.platform = :ios
     s.source = { :git => 'https://github.com/BENMESSAOUD/yousign', :tag => 'PREPROD_01' }
     s.ios.deployment_target = '8.0'
-  	s.source_files  = 'yousign/YouSign/YouSign/**/*.{swift}'
+  	s.source_files  = 'YouSign/YouSign/**/*.{swift}'
   	s.dependency 'SwiftyXMLParser'
  	s.dependency 'CryptoSwift'
 end 
