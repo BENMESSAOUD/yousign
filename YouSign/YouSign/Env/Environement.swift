@@ -7,9 +7,9 @@
 //
 
 import Foundation
-public enum Target {
-    case demo
-    case production
+@objc public enum Target: Int {
+    case demo = 0
+    case production = 1
 }
 
 enum API_URL: String{
@@ -17,7 +17,7 @@ enum API_URL: String{
     case productionURL = "https://api.yousign.fr:8181/"
 }
 
-public struct Environement {
+@objc public class Environement: NSObject {
     var target: Target
     var credentials: Credentials
     private var api_Url: API_URL

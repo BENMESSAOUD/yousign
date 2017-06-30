@@ -7,9 +7,8 @@
 //
 
 import Foundation
-import SwiftyXMLParser
 
-public class SignatureConfirmation: Action, Requestable {
+@objc public class SignatureConfirmation: Action, Requestable {
 
     public typealias ReturnType = Bool
     var signature: Signature
@@ -18,7 +17,7 @@ public class SignatureConfirmation: Action, Requestable {
     var _otp: String = kEmptyString
     var signatureImage: Data?
 
-    init(_ environnement: Environement, _ signature: Signature, _ signer: Signer, _ signatureImage: Data? = nil) {
+    @objc public init( environnement: Environement,  signature: Signature,  signer: Signer,  signatureImage: Data? = nil) {
         self.signature = signature
         self.signer = signer
         self.signatureImage = signatureImage

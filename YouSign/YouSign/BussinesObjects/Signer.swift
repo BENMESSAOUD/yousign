@@ -7,14 +7,14 @@
 //
 
 import Foundation
-public class Signer: Node {
+@objc public class Signer: NSObject, Node {
 
     public var firstName: String
     public var lastName: String
     public var mail: String?
     public var phone: String?
 
-    init(_ firstName: String, _ lastName: String, _ mail: String? , _ phone: String?) {
+    @objc public  init(firstName: String,lastName: String, mail: String? , phone: String?) {
         self.firstName = firstName
         self.lastName = lastName
         self.mail = mail

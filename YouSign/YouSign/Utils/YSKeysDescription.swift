@@ -19,7 +19,7 @@ enum XMLRequestKeys: String {
 
 enum ApiScheme: String {
     case authentification = "AuthenticationWS/AuthenticationWS"
-    case signature = "/CosignWS/CosignWS"
+    case signature = "CosignWS/CosignWS"
 }
 
 enum HeaderKeys: String {

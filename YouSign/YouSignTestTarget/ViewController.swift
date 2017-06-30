@@ -10,7 +10,7 @@ import UIKit
 import YouSign
 
 class ViewController: UIViewController {
-    let env  =  Environement(Target.demo, credential: Authent())
+    let env  =  Environement(Target.production, credential: Authent())
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

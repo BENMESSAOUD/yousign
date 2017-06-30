@@ -7,9 +7,8 @@
 //
 
 import Foundation
-import SwiftyXMLParser
 
-public class SignatureRequest: Action, Requestable {
+@objc public class SignatureRequest: Action, Requestable {
 
     public typealias ReturnType = Signature
 
@@ -79,11 +78,14 @@ public class SignatureRequest: Action, Requestable {
     }
 
     public func send(onSuccess: @escaping (Signature) -> Void, onFail: @escaping Requestable.OnFail) {
+        print("begin sending request signature")
         sendRequest { (data, statusCode, err) in
             if let error = err {
+                print(error.localizedDescription)
                 onFail(error, statusCode)
             }
             else if let data = data, statusCode == StatusCode.ok.rawValue {
+                print("request signature OK")
                 let xml = XML.parse(data)
                 let result = self.getResult(actionName: .initSign, parser: xml)
                 if let signature = self.getSignature(parser: result) {
@@ -94,6 +96,8 @@ public class SignatureRequest: Action, Requestable {
                 }
             }
             else {
+                let stringData = String.init(data: data!, encoding: .utf8)
+                print("request signature Fail data is \(stringData ?? "no data") status code is \(statusCode)) and error is \(err?.localizedDescription ?? "no error")")
                 onFail(ConnectorError.server, StatusCode.serverError.rawValue)
             }
 

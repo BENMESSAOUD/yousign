@@ -7,13 +7,12 @@
 //
 
 import Foundation
-import SwiftyXMLParser
-public class SignedFiles: Action, Requestable {
+@objc public class SignedFiles: Action, Requestable {
     public typealias ReturnType = [File]
     var signature: Signature
     var idFile: String?
     var signer: Signer?
-    init(_ environement: Environement, signature: Signature) {
+    @objc public init(environement: Environement, signature: Signature) {
         self.signature = signature
         super.init(environement)
     }
@@ -52,7 +51,7 @@ public class SignedFiles: Action, Requestable {
             else if let data = data, statusCode == StatusCode.ok.rawValue {
                 let xml = XML.parse(data)
                 let result =  xml[XMLResponseKeys.envelope.rawValue, XMLResponseKeys.body.rawValue, XMLResponseKeys.signedFile.rawValue]
-                let files = self.getFiles(parser: result)
+                let files = self.fetchFiles(parser: result)
                 if files.count > 0 {
                     onSuccess(files)
                 }
@@ -66,7 +65,7 @@ public class SignedFiles: Action, Requestable {
         }
     }
 
-    private func getFiles(parser: XML.Accessor) -> [File] {
+    private func fetchFiles(parser: XML.Accessor) -> [File] {
         var result = [File]()
         if let allElements = parser.element?.childElements {
             for element in allElements {
@@ -75,7 +74,7 @@ public class SignedFiles: Action, Requestable {
                 if let fileName = xmlItem[SignedFileResponseKeys.filename.rawValue].text,
                     let base64String  = xmlItem[SignedFileResponseKeys.file.rawValue].text,
                     let content =  Data(base64Encoded: base64String, options: Data.Base64DecodingOptions.ignoreUnknownCharacters) {
-                    let file = File.init(fileName, content)
+                    let file = File.init(name: fileName, content: content)
                     result.append(file)
                 }
             }

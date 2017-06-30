@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import SwiftyXMLParser
 
 public protocol Requestable {
     associatedtype ReturnType
@@ -17,7 +16,7 @@ public protocol Requestable {
 
 }
 
-public class Action: Node{
+@objc public class Action: NSObject, Node{
 
     private var environement: Environement
     internal var username: String
@@ -32,7 +31,7 @@ public class Action: Node{
     }
 
     var encryptedPassword: String {
-        return "\(self.password.sha1)\(self.password.sha1)".sha1
+        return "\(self.password.sha1)\(self.password.sha1)".sha1()
     }
 
     public var apiScheme: String {
@@ -70,7 +69,7 @@ public class Action: Node{
             completion(nil, 404, error)
             return
         }
-
+        print("URL : \(url) \n ENVELOPE : \(xml)")
         Connector().sendSoapRequest(url: url, xml: xml, soapAction: soapAction) { (data, statusCode, error) in
             completion (data, statusCode, error)
         }

@@ -11,7 +11,7 @@ import Foundation
 public typealias Token = (token:String, mail: String?, phone: String?)
 public typealias FileInfo = (id:String, fileName: String, sha1: String)
 
-public class Signature {
+@objc public class Signature: NSObject {
 
     public var id: String
     var files = [FileInfo]()
