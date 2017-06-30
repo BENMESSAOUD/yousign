@@ -13,6 +13,8 @@
 		353A46D61ED2D887009F2CD9 /* YouSign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353A46CC1ED2D887009F2CD9 /* YouSign.framework */; };
 		353A46DB1ED2D887009F2CD9 /* YouSignTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353A46DA1ED2D887009F2CD9 /* YouSignTests.swift */; };
 		353A46DD1ED2D887009F2CD9 /* YouSign.h in Headers */ = {isa = PBXBuildFile; fileRef = 353A46CF1ED2D887009F2CD9 /* YouSign.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35589DBF1F06158800715CB3 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35589DBD1F06158800715CB3 /* CryptoSwift.framework */; };
+		35589DC01F06158800715CB3 /* SwiftyXMLParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35589DBE1F06158800715CB3 /* SwiftyXMLParser.framework */; };
 		356C31E31EE69FF8002D3959 /* SignedFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356C31E21EE69FF8002D3959 /* SignedFiles.swift */; };
 		357B1CF61EE591FA003C43D4 /* SignatureConfirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357B1CF51EE591FA003C43D4 /* SignatureConfirmation.swift */; };
 		357B527F1EE4CEA100B211A3 /* SignatureRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357B527E1EE4CEA100B211A3 /* SignatureRequest.swift */; };
@@ -102,6 +104,8 @@
 		353A46D51ED2D887009F2CD9 /* YouSignTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YouSignTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		353A46DA1ED2D887009F2CD9 /* YouSignTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouSignTests.swift; sourceTree = "<group>"; };
 		353A46DC1ED2D887009F2CD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35589DBD1F06158800715CB3 /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = "../../../../Library/Developer/Xcode/DerivedData/YouSign-btlprqagxucakzhhpvslbxdutktd/Build/Products/Debug-iphonesimulator/CryptoSwift/CryptoSwift.framework"; sourceTree = "<group>"; };
+		35589DBE1F06158800715CB3 /* SwiftyXMLParser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyXMLParser.framework; path = "../../../../Library/Developer/Xcode/DerivedData/YouSign-btlprqagxucakzhhpvslbxdutktd/Build/Products/Debug-iphonesimulator/SwiftyXMLParser/SwiftyXMLParser.framework"; sourceTree = "<group>"; };
 		356C31E21EE69FF8002D3959 /* SignedFiles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignedFiles.swift; sourceTree = "<group>"; };
 		357B1CF51EE591FA003C43D4 /* SignatureConfirmation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignatureConfirmation.swift; sourceTree = "<group>"; };
 		357B527E1EE4CEA100B211A3 /* SignatureRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignatureRequest.swift; sourceTree = "<group>"; };
@@ -142,6 +146,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35589DBF1F06158800715CB3 /* CryptoSwift.framework in Frameworks */,
+				35589DC01F06158800715CB3 /* SwiftyXMLParser.framework in Frameworks */,
 				B41936596F3C740F8BD62D39 /* Pods_YouSign.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,6 +318,8 @@
 		E1C96094D73C7F90B99DE342 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				35589DBD1F06158800715CB3 /* CryptoSwift.framework */,
+				35589DBE1F06158800715CB3 /* SwiftyXMLParser.framework */,
 				933F747A21DFA4BF22AC1D25 /* Pods_YouSign.framework */,
 				5B507D6A1E2BE7915207C1F7 /* Pods_YouSignTestTarget.framework */,
 			);
@@ -352,6 +360,7 @@
 				353A46C91ED2D887009F2CD9 /* Headers */,
 				353A46CA1ED2D887009F2CD9 /* Resources */,
 				F56627E763F8B0FBC6C9012F /* [CP] Copy Pods Resources */,
+				35589DBC1F0614A200715CB3 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -477,6 +486,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		35589DBC1F0614A200715CB3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset +u\n# Avoid recursively calling this script.\nif [[ $SF_MASTER_SCRIPT_RUNNING ]]\nthen\nexit 0\nfi\nset -u\nexport SF_MASTER_SCRIPT_RUNNING=1\n\n\n# Constants\nSF_TARGET_NAME=${PROJECT_NAME}\nUNIVERSAL_OUTPUTFOLDER=${PROJECT_DIR}/Livraison/${TARGET_NAME}/${CONFIGURATION}-universal\n\n# Take build target\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\nSF_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\n#if [[ \"$SF_SDK_PLATFORM\" = \"iphoneos\" ]]\n#then\n#echo \"Please choose iPhone simulator as the build target.\"\n#exit 1\n#fi\n\nIPHONE_DEVICE_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphoneos\n\n# Build the other (non-simulator) platform\nxcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk iphoneos BUILD_DIR=\"${BUILD_DIR}\" OBJROOT=\"${OBJROOT}\" BUILD_ROOT=\"${BUILD_ROOT}\" CONFIGURATION_BUILD_DIR=\"${IPHONE_DEVICE_BUILD_DIR}/arm64\" SYMROOT=\"${SYMROOT}\" ARCHS='arm64' VALID_ARCHS='arm64' $ACTION\n\nxcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk iphoneos BUILD_DIR=\"${BUILD_DIR}\" OBJROOT=\"${OBJROOT}\" BUILD_ROOT=\"${BUILD_ROOT}\"  CONFIGURATION_BUILD_DIR=\"${IPHONE_DEVICE_BUILD_DIR}/armv7\" SYMROOT=\"${SYMROOT}\" ARCHS='armv7 armv7s' VALID_ARCHS='armv7 armv7s' $ACTION\n\n# Copy the framework structure to the universal folder (clean it first)\nrm -rf \"${UNIVERSAL_OUTPUTFOLDER}\"\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${TARGET_NAME}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/${TARGET_NAME}.framework\"\n\n# Smash them together to combine all architectures\nlipo -create  \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${TARGET_NAME}.framework/${TARGET_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/arm64/${TARGET_NAME}.framework/${TARGET_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/armv7/${TARGET_NAME}.framework/${TARGET_NAME}\" -output \"${UNIVERSAL_OUTPUTFOLDER}/${TARGET_NAME}.framework/${TARGET_NAME}\"";
+		};
 		3FA120E7C02AEF866ED6210B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
