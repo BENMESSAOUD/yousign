@@ -8,7 +8,7 @@
 
 import Foundation
 
-public protocol Credentials {
+@objc public protocol Credentials {
 
     var login: String {get}
     var password: String {get}

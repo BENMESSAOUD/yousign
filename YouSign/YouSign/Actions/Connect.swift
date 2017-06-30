@@ -9,7 +9,7 @@
 import Foundation
 import SwiftyXMLParser
 
-public class Connect : Action, Requestable{
+@objc public class Connect : Action, Requestable{
     public typealias ReturnType = Bool
     override public var name: String{
         return XMLRequestKeys.connect.rawValue

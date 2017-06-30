@@ -17,14 +17,14 @@ public protocol Requestable {
 
 }
 
-public class Action: Node{
+@objc public class Action: NSObject, Node{
 
     private var environement: Environement
     internal var username: String
     internal var password: String
     internal var apiKey: String
 
-    public init(_ environnement: Environement) {
+    @objc public init(environnement: Environement) {
         self.environement = environnement
         self.username = self.environement.credentials.login
         self.password = self.environement.credentials.password

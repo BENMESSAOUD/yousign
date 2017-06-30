@@ -9,7 +9,7 @@
 import Foundation
 import SwiftyXMLParser
 
-public class SignatureRequest: Action, Requestable {
+@objc public class SignatureRequest: Action, Requestable {
 
     public typealias ReturnType = Signature
 

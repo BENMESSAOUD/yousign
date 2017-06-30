@@ -10,18 +10,18 @@ import UIKit
 import YouSign
 
 class ViewController: UIViewController {
-    let env  =  Environement(Target.demo, credential: Authent())
+    let env  =  Environement(Target.production, credential: Authent())
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
     @IBAction func connect(_ sender: Any) {
-        let action  = Connect(env)
+        let action  = Connect(environnement: env)
         action.send(onSuccess: { (result) in
             print("\(result ? "Connected" : "Error Credential")")
         }) { (error, code) in
-            print("Code : \(code) \nError : \(error)")
+            print("Code : \(code) \nError : \(String(describing: error))")
         }
     }
     override func didReceiveMemoryWarning() {

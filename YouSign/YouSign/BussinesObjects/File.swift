@@ -7,12 +7,12 @@
 //
 
 import Foundation
-public class File: Node {
+@objc public class File: NSObject, Node {
     public var fileName: String
     public var content: Data
     public var password: String?
 
-    init(_ name: String, _ content: Data, _ password: String? = nil) {
+    @objc public init(name: String, content: Data, password: String? = nil) {
         self.fileName = name
         self.content = content
         self.password = password
