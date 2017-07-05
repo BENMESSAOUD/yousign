@@ -8,8 +8,17 @@
 
 import Foundation
 
-public typealias Token = (token:String, mail: String?, phone: String?)
-public typealias FileInfo = (id:String, fileName: String, sha1: String)
+@objc public class Token : NSObject{
+    public var token: String = kEmptyString
+    public var mail: String?
+    public var phone: String?
+}
+
+@objc public class FileInfo : NSObject{
+    public var id: String = kEmptyString
+    public var fileName: String = kEmptyString
+    public var sha1: String = kEmptyString
+}
 
 @objc public class Signature: NSObject {
 
@@ -33,6 +42,6 @@ public typealias FileInfo = (id:String, fileName: String, sha1: String)
             return signer.mail == item.mail && signer.phone == item.phone
         }
 
-        return token.first ?? (token:kEmptyString, mail: nil, phone: nil)
+        return token.first ?? Token()
     }
 }

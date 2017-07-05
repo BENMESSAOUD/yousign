@@ -20,6 +20,7 @@ import SwiftyXMLParser
     public var confirmationMailSubject: String?
     public var confirmationMail: String?
     public var message: String?
+    public var iFrameMode: Bool = false
 
     public func addFile(_ file: File){
         files.append(file)
@@ -52,22 +53,24 @@ import SwiftyXMLParser
     }
 
     override public var values: [String : String]?{
+        var result = [String : String]()
         if let message = message {
-            return [SignatureRequestKeys.message.rawValue : message]
+            result[SignatureRequestKeys.message.rawValue] = message
+        }
+        if self.iFrameMode {
+            result[SignatureRequestKeys.mode.rawValue] = "IFRAME"
         }
         if let initSubject = requestMailSubject,
             let initMail = requestMail,
             let endSubject = confirmationMailSubject,
             let endMail = confirmationMail{
-            return [
-                SignatureRequestKeys.intiMailSubject.rawValue : initSubject,
-                SignatureRequestKeys.intiMail.rawValue : initMail,
-                SignatureRequestKeys.endMailSubject.rawValue : endSubject,
-                SignatureRequestKeys.endMail.rawValue : endMail
-            ]
+            result[SignatureRequestKeys.intiMailSubject.rawValue] = initSubject
+            result[SignatureRequestKeys.intiMail.rawValue] = initMail
+            result[SignatureRequestKeys.endMailSubject.rawValue] = endSubject
+            result[SignatureRequestKeys.endMail.rawValue] = endMail
         }
 
-        return nil
+        return result
     }
 
     override public var apiScheme: String {
@@ -114,15 +117,18 @@ import SwiftyXMLParser
                     switch elemntType {
                     case .fileInfos:
                         let xmlItem = XML.Accessor(element)
-                        let fileInfo: FileInfo = (id: xmlItem[SignatureResponseKeys.idFile.rawValue].text ?? kEmptyString,
-                                                  fileName :xmlItem[SignatureResponseKeys.filename.rawValue].text ?? kEmptyString,
-                                                  sha1 : xmlItem[SignatureResponseKeys.sha1.rawValue].text ?? kEmptyString)
+                        let fileInfo = FileInfo()
+                        fileInfo.id = xmlItem[SignatureResponseKeys.idFile.rawValue].text ?? kEmptyString
+                        fileInfo.fileName = xmlItem[SignatureResponseKeys.filename.rawValue].text ??  kEmptyString
+                        fileInfo.sha1 = xmlItem[SignatureResponseKeys.sha1.rawValue].text ?? kEmptyString
                         result.addFileInfo(fileInfo: fileInfo)
                     case .tokens:
                         let xmlItem = XML.Accessor(element)
-                        let token: Token = (token: xmlItem[SignatureResponseKeys.idFile.rawValue].text ?? kEmptyString,
-                                                  mail :xmlItem[SignatureResponseKeys.filename.rawValue].text,
-                                                  phone : xmlItem[SignatureResponseKeys.sha1.rawValue].text)
+                        let token = Token()
+                        token.token = xmlItem[SignatureResponseKeys.idFile.rawValue].text ?? kEmptyString
+                        token.mail = xmlItem[SignatureResponseKeys.filename.rawValue].text
+                        token.phone =  xmlItem[SignatureResponseKeys.sha1.rawValue].text
+
                         result.addToken(token: token)
                         break
                     default:

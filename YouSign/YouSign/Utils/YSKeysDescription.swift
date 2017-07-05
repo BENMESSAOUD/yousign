@@ -77,6 +77,7 @@ enum SignatureRequestKeys: String {
     case endMailSubject = "endMailSubject"
     case endMail = "endMail"
     case message = "message"
+    case mode = "mode"
 }
 
 enum ConfirmationRequestKeys: String {
