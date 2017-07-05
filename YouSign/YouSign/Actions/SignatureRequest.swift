@@ -125,9 +125,9 @@ import SwiftyXMLParser
                     case .tokens:
                         let xmlItem = XML.Accessor(element)
                         let token = Token()
-                        token.token = xmlItem[SignatureResponseKeys.idFile.rawValue].text ?? kEmptyString
-                        token.mail = xmlItem[SignatureResponseKeys.filename.rawValue].text
-                        token.phone =  xmlItem[SignatureResponseKeys.sha1.rawValue].text
+                        token.token = xmlItem[SignatureResponseKeys.token.rawValue].text ?? kEmptyString
+                        token.mail = xmlItem[SignatureResponseKeys.mail.rawValue].text
+                        token.phone =  xmlItem[SignatureResponseKeys.phone.rawValue].text
 
                         result.addToken(token: token)
                         break
