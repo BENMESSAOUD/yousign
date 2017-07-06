@@ -51,6 +51,14 @@ enum FileKeys: String {
     case pdfPassword = "pdfPassword"
 }
 
+enum VisibleOptionsKeys: String {
+    case name = "visibleOptions"
+    case page = "visibleSignaturePage"
+    case isVisible = "isVisibleSignature"
+    case position = "visibleRectangleSignature"
+    case mail = "mail"
+}
+
 enum SignerKeys: String{
     case name = "lstCosignerInfos"
     case firstname = "firstName"

@@ -33,6 +33,7 @@
 		357C53E61EDEF631000C10CA /* Node+Extension.swift in Headers */ = {isa = PBXBuildFile; fileRef = 357C53DD1EDEEC6D000C10CA /* Node+Extension.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		357C53E71EDEF631000C10CA /* Connect.swift in Headers */ = {isa = PBXBuildFile; fileRef = 3503A18C1EDC3CEC009E26E0 /* Connect.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		357C53E81EDEF631000C10CA /* Action.swift in Headers */ = {isa = PBXBuildFile; fileRef = 3503A18E1EDC3DC7009E26E0 /* Action.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		3581FAB21F0E010B0011CE42 /* VisibleOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3581FAB11F0E010B0011CE42 /* VisibleOptions.swift */; };
 		359B1ADB1ED33C2D00530F2E /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359B1ADA1ED33C2D00530F2E /* Credentials.swift */; };
 		359B1ADD1ED33EC700530F2E /* Environement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359B1ADC1ED33EC700530F2E /* Environement.swift */; };
 		359B1ADF1ED3435600530F2E /* EnvironementTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359B1ADE1ED3435600530F2E /* EnvironementTest.swift */; };
@@ -116,6 +117,7 @@
 		357C53D41EDEE9CA000C10CA /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		357C53D51EDEE9CA000C10CA /* SoapRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoapRequest.swift; sourceTree = "<group>"; };
 		357C53DD1EDEEC6D000C10CA /* Node+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Node+Extension.swift"; sourceTree = "<group>"; };
+		3581FAB11F0E010B0011CE42 /* VisibleOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisibleOptions.swift; sourceTree = "<group>"; };
 		359B1ADA1ED33C2D00530F2E /* Credentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		359B1ADC1ED33EC700530F2E /* Environement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environement.swift; sourceTree = "<group>"; };
 		359B1ADE1ED3435600530F2E /* EnvironementTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironementTest.swift; sourceTree = "<group>"; };
@@ -283,6 +285,7 @@
 				35A9F0A31EE39D2F00421A07 /* File.swift */,
 				35A9F0A51EE39D4A00421A07 /* Signer.swift */,
 				357B52801EE4DF6500B211A3 /* Signature.swift */,
+				3581FAB11F0E010B0011CE42 /* VisibleOptions.swift */,
 			);
 			path = BussinesObjects;
 			sourceTree = "<group>";
@@ -594,6 +597,7 @@
 				3503A1921EDC3F94009E26E0 /* String+Extension.swift in Sources */,
 				35F3A1041EE01F6200D6F619 /* YSKeysDescription.swift in Sources */,
 				35A9F0A41EE39D2F00421A07 /* File.swift in Sources */,
+				3581FAB21F0E010B0011CE42 /* VisibleOptions.swift in Sources */,
 				356C31E31EE69FF8002D3959 /* SignedFiles.swift in Sources */,
 				357B52811EE4DF6500B211A3 /* Signature.swift in Sources */,
 				3503A18D1EDC3CEC009E26E0 /* Connect.swift in Sources */,
